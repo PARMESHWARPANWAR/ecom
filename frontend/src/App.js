@@ -42,7 +42,6 @@ import NotFound from "./component/layout/Not Found/NotFound";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./component/layout/Header/Navbar";
 import ResumePage from "./component/layout/About/ResumePage";
-import Test from "./Test/Index";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -106,7 +105,6 @@ function App() {
         <Route exact path="/login" component={LoginSignUp} />
 
         <Route exact path="/cart" component={Cart} />
-        <Route exact path="/test" component={Test} />
 
         <ProtectedRoute exact path="/shipping" component={Shipping} />
 
